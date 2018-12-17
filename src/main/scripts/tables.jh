@@ -20,10 +20,12 @@ relationship OneToMany {
     RfbLocation{rvbEvent} to RfbEvent,
     RfbEvent{rfbEventAttendance} to RfbEventAttendance,
     RfbUser{rfbEventAttendance} to RfbEventAttendance
+
 }
 
 relationship OneToOne {
     RfbUser{homeLocation} to RfbLocation
+
 }
 
 dto * with mapstruct
