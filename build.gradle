@@ -228,6 +228,11 @@ dependencies {
     compile "mysql:mysql-connector-java"
     liquibaseRuntime "mysql:mysql-connector-java"
     compile "org.mapstruct:mapstruct-jdk8:${mapstruct_version}"
+
+    compile "org.springframework.social:spring-social-security"
+    compile "org.springframework.social:spring-social-facebook"
+    compile "org.springframework.social:spring-social-twitter"
+
     annotationProcessor "org.mapstruct:mapstruct-processor:${mapstruct_version}"
     annotationProcessor "org.hibernate:hibernate-jpamodelgen"
     annotationProcessor ("org.springframework.boot:spring-boot-configuration-processor") {
