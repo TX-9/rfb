@@ -40,13 +40,16 @@ jobs:
                       - ~/.gradle
                   key: v1-dependencies-{{ checksum "build.gradle" }}
 
-            # run tests!
-            - run: gradle test
+
 
             # Install Node for JH Build
             - run:
                 name: Download Node
                 command: curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash
+
+            # run tests!
+            - run: gradle test
+
             - run:
                 name: install yarn
                 command: sudo npm install -g yarn
